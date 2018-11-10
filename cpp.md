@@ -7,3 +7,7 @@ Can be useful when you use cpp on something that is not c code.
 ```bash
 gcc -E -P
 ```
+3) Show default search paths for #include <...>
+```bash
+cpp -v /dev/null -o /dev/null
+```
