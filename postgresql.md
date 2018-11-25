@@ -27,3 +27,9 @@ Output is similar to this one:
      13017 | template0
 ```
 More info http://www.postgresql.fastware.com/blog/where-and-how-is-your-data-actually-stored-on-disk
+
+4) Show info from pg_settings:
+
+```sql
+select unit from pg_settings where name='shared_buffers';
+```
