@@ -33,3 +33,11 @@ More info http://www.postgresql.fastware.com/blog/where-and-how-is-your-data-act
 ```sql
 select unit from pg_settings where name='shared_buffers';
 ```
+Change settings and reload server:
+
+```sql
+ALTER SYSTEM set work_mem = 8192;
+SELECT pg_reload_conf();
+```
+PostgreSQL records changes made through ALTER SYSTEM in an override file called
+postgresql.auto.conf, not directly into postgresql.conf.
