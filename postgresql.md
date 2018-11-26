@@ -63,3 +63,12 @@ ALTER USER role_specification WITH OPTION1 OPTION2 OPTION3;
 -- Most options also have a negative counterpart - e.g. NOCREATEDB
 -- (CREATE USER is the same as CREATE ROLE except that it implies LOGIN.)
 ```
+6) Backuping 
+
+* Using pg_dump db_name > dump.sql
+
+```sql
+pg_dump -h localhost -d <db_name> -U <user_name> > sump.sql
+```
+* With Point-in-Time Database Restoration
+Great article: https://severalnines.com/blog/become-postgresql-dba-point-time-database-restoration
