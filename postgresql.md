@@ -41,3 +41,25 @@ SELECT pg_reload_conf();
 ```
 PostgreSQL records changes made through ALTER SYSTEM in an override file called
 postgresql.auto.conf, not directly into postgresql.conf.
+
+5) Working with users:
+
+* List all the existing users
+```sql
+SELECT usename FROM pg_user;
+```
+* Create new user
+```sql
+CREATE USER librarian;
+```
+* Viewing Existing User Permissions
+```sql
+\du
+```
+* Altering Existing User Permissions
+```sql
+ALTER USER role_specification WITH OPTION1 OPTION2 OPTION3;
+-- These options range from CREATEDB, CREATEROLE, CREATEUSER, and even SUPERUSER.
+-- Most options also have a negative counterpart - e.g. NOCREATEDB
+-- (CREATE USER is the same as CREATE ROLE except that it implies LOGIN.)
+```
