@@ -14,7 +14,7 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/key" git push
 
 3) 
 content ~/.ssh/config
-
+```bash
 Host github.com
 HostName github.com
 IdentityFile /path/to/your/personal/github/private/key
@@ -24,7 +24,7 @@ Host github-work
 HostName github.com
 IdentityFile /path/to/your/work/github/private/key
 User workuser
-
+```
 Then, to clone a project as your personal user, just run the regular git clone command.
 
 To clone the repo as the workuser, run `git clone git@github-work:company/project.git`
