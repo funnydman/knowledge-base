@@ -7,6 +7,10 @@ https://www.youtube.com/watch?v=FW3_OPBxk2s (Андрей Власовских, 
 
 https://www.youtube.com/watch?v=rGQFoVm0tdM (Vim script basic tutorial)
 
+[Vim: Tutorial on Editing, Navigation, and File Management (2018)](https://www.youtube.com/watch?v=E-ZbrtoSuzw&list=WL&index=7)
+
+[Как сделать 90% того, что делают плагины, в чистом Vim'е](https://www.youtube.com/watch?v=XA2WjJbmmoM&list=WL&index=8)
+
 
 ### Bob Martin talks
 https://www.youtube.com/watch?v=TMuno5RZNeE (Bob Martin SOLID Principles of Object Oriented and Agile Design)
